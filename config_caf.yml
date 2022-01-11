@@ -1,0 +1,26 @@
+model:
+    torch:
+        path: "./models/model.pth"
+    onnx:
+        path: "models/SSD_MobileNetV1/model.onnx"
+
+images:
+    type: ".png"
+    tile:
+        width: 300
+        height: 300
+
+inference:
+    execution_time: 1800 # Running time of experiment (seconds)
+    max_temperature: 65 # Celcius
+    intervals: 5 # Analysis every X seconds
+
+results:
+    path: "./results" # Where results will be saved
+    logging_time: 30
+
+ftp:
+    host: "10.3.141.1"
+    username: "pi"
+    password: "LuxPi!"
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+rm logs.log
+rm stats.log
+rm -rf results
+python3 stats.py & python3 ml_ftp.py
